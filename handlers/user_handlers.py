@@ -159,6 +159,7 @@ def setup_user_handlers(application: Application):
                 Q1: [CallbackQueryHandler(handle_question1)],
                 Q2: [CallbackQueryHandler(handle_question2)]
             },
-            fallbacks=[]
+            fallbacks=[],
+            per_message=False
         )
     )
